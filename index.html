@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chocolate Machine </title>
+	<script type="text/javascript" src="script.js">
+	
+	</script>
+	
+	<style>
+	  img{
+	  width:200px;
+	  height:180px;
+	  }
+	   button{
+	   margin-left:50px;
+	   }
+	   td{
+	      border:solid;
+		  border-color:black;
+	   }
+	   header{
+	        font-size:40px;
+			color:blue;
+			text-align:center;
+	   }
+	 </style>
+</head>
+<body>
+      <header>Chocolate Machine</header>
+     <table>
+	 <tr>
+	 <td>
+	 
+	 <img src="kitkat.jfif" alt= "kitkat.jfif">    <br>
+	 <input type="number" id="name1" placeholder="Enter Quantity"><br>
+	 <button onclick="printChocolate('kitkat')">View Price</button>
+     <p id="print1"></p>
+   </td>
+   <td>
+    
+      <img src="milkybar.jfif" alt= "milkybar.jfif">    <br>
+      <input type="number" id="name2" placeholder="Enter Quantity"><br>	  
+   <button onclick="printChocolate('Milkybar')">View Price</button><br>
+      <p id="print2"></p>
+   </td>
+   <td>
+   
+      <img src="dairymilk.jfif" alt= "dairymilk.jfif">    <br>
+	  <input type="number" id="name3" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Dairymilk')">View Price</button><br>
+      <p id="print3"></p>
+   </td>
+   <td>
+       <img src="perk.jfif" alt= "perk.jfif">    <br>
+	   <input type="number" id="name4" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Perk')">View Price</button><br>
+       <p id="print4"></p>
+   </td>
+   <td>
+   
+       <img src="tempt.jfif" alt= "tempt.jfif">    <br>
+	   <input type="number" id="name5" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Temptations')">View Price</button><br>
+        <p id="print5"></p>
+   </td>
+   <td>
+       <img src="luvit.jfif" alt= "luvit.jfif">    <br>
+	   <input type="number" id="name6" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Luvit')">View Price</button><br>
+       <p id="print6"></p>
+   </td>
+   <td>
+       <img src="munch.jfif" alt= "munch.jfif">    <br>
+	   <input type="number" id="name7" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Munch')">View Price</button><br>
+       <p id="print7"></p>
+   </td>
+   </tr>
+   <tr>
+   <td>
+        <img src="eclaris.jfif" alt= "eclaris.jfif">    <br>
+		<input type="number" id="name8" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Eclairs')">View Price</button><br>
+        <p id="print8"></p>
+   </td>
+   
+   <td>
+   
+         <img src="butterfun.jfif" alt= "butterfun.jfif">    <br>
+		 <input type="number" id="name9" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Butterfun')">View Price</button><br>
+         <p id="print9"></p>
+   </td>
+   <td>
+         <img src="alpenlibe.jfif" alt= "alpenlibe.jfif">    <br>
+		 <input type="number" id="name10" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Alpenliebe')">View Price</button><br>
+        <p id="print10"></p>
+   </td>
+   <td>
+         <img src="lolipop.jfif" alt= "lolipop.jfif">    <br>
+		 <input type="number" id="name11" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Lolipop')">View Price</button><br>
+         <p id="print11"></p>
+   </td>
+   <td>
+          <img src="bueno.jfif" alt= "bueno.jfif">    <br>
+		  <input type="number" id="name12" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Bueno')">View Price</button><br>
+          <p id="print12"></p>
+   </td>
+
+   <td>
+         <img src="asha.jfif" alt= "asha.jfif">    <br>
+		 <input type="number" id="name13" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Aasay')">View Price</button><br>
+         <p id="print13"></p>
+   </td>
+   <td>
+          <img src="greenapple.png" alt= "greenapple.png">    <br>
+		  <input type="number" id="name14" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Greenapple')">View Price</button><br>
+          <p id="print14"></p>
+   </td>
+   </tr>
+   <tr>
+   <td>
+         <img src="snickers.jfif" alt= "snickers.jfif">    <br>
+		 <input type="number" id="name15" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Snickers')">View Price</button><br>
+         <p id="print15"></p>
+   </td>
+   <td>
+   
+       <img src="darkchocolate.jfif" alt= "darkchocolate.jfif">    <br>
+	   <input type="number" id="name16" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Darkchocolate')">View Price</button><br>
+          <p id="print16"></p>
+   </td>
+   <td>
+       <img src="bournville.jfif" alt= "bournville.jfif">    <br>
+	   <input type="number" id="name17" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Bournville')">View Price</button><br>
+          <p id="print17"></p>
+   </td>
+   <td>
+      <img src="melto.jfif" alt= "melto.jfif">    <br>
+	  <input type="number" id="name18" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Melto')">View Price</button>
+          <p id="print18"></p>
+   </td>
+   <td>
+       <img src="fivestar.jfif" alt= "fivestar.jfif">    <br>
+	   <input type="number" id="name19" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Fivestar')">View Price</button><br>
+        <p id="print19"></p>
+   </td>
+   <td>
+      <img src="galaxy.jfif" alt= "galaxy.jfif">    <br>
+	  <input type="number" id="name20" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Galaxy')">View Price</button><br>
+         <p id="print20"></p>
+   </td>
+     <td>
+	 <img src="hersheys.jfif" alt= "hersheys.jfif">    <br>
+	 <input type="number" id="name21" placeholder="Enter Quantity"><br>
+   <button onclick="printChocolate('Hersheys')">View Price</button><br>
+         <p id="print21"></p>
+   </td>
+	 
+   </tr>
+   
+   </table>
+   </body>
+   </html>
+   
